@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Tâches</title>
+    <style>
+        .line-through { text-decoration: line-through; }
+        .opacity-50 { opacity: 0.5; }
+    </style>
+</head>
+<body>
+    <form id="todoForm">
+        <input type="text" id="newTodo" placeholder="Tâche à effectuer" class="p-2 bg-green-50" />
+        <button id="addButton" class="bg-green-500 text-white px-4 py-2" disabled>Ajouter une tâche</button>
+    </form>
+
+    <div id="noTasksMessage" style="display: none;">Vous n'avez pas de tâches à faire 🥺</div>
+    <ul id="todoList"></ul>
+    <label>
+        <input type="checkbox" id="hideCompletedCheckbox" /> Masquer les tâches terminées
+    </label><br>
+    <button id="sortButton" class="bg-green-500 text-white px-4 py-2">Trier</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
